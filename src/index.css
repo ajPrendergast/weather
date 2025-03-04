@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  position: absolute;
+  top: 100px; /* Adjust spacing from the top */
+  left: 50%;
+  transform: translateX(-50%); /* Ensures perfect centering */
+  text-align: center;
+  letter-spacing: 3px; /* Adds spacing between letters */
+  font-size: 3rem; /* Bigger font */
+  font-weight: bold;
+  color: #b0c4de; /* Soft slate blue for a modern look */
+  border-bottom: 2px solid #b0c4de; /* Subtle underline */
+  padding-bottom: 5px;
+}
+
+#map {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+.app-container{
+  background: #121212;
+  font-family: "Montserrat", serif;
+  min-height: 100vh; /* Ensures full-page height */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Controls spacing between h1 and forecast-container */
+  align-items: center; /* Centers everything horizontally */
+  justify-content: center; /* Centers content vertically */
+}
+
+h1, h2{
+  color: #E0E0E0
+}
+
+p{
+  color: #B0B0B0;
+}
+
+.forecast-container{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 equal columns */
+  gap: 10px; /* Space between cards */
+  padding: 20px;
+  overflow-x: auto; /* Allows horizontal scrolling if needed */
+}
+
+.leaflet-control-fullscreen {
+  background-image: url("https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.0.2/fullscreen.png") !important;
+  background-size: cover !important;
+  width: 36px;
+  height: 36px;
+}

@@ -1,0 +1,12 @@
+.weather-card {
+    background: #1e1e1e;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 120px; /* Prevents shrinking on smaller screens */
+  }
+
+.forecast-day h2{
+    text-align: center;
+}
