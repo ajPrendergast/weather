@@ -18,13 +18,14 @@ const App = () => {
         <p>Selected Coordinates: {selectedCoords[0]}, {selectedCoords[1]}</p>
       )}
       <div className="forecast-container">
-        <WeatherCard day='Monday 01'/>
-        <WeatherCard day='Tuesday 02'/>
-        <WeatherCard day='Wednesday 03'/>
-        <WeatherCard day='Thursday 04'/>
-        <WeatherCard day='Friday 05'/>
-        <WeatherCard day='Saturday 06'/>
-        <WeatherCard day='Sunday 07'/>
+        {forecastData.map((dayData, index) => (
+          <WeatherCard
+          key={index}
+          day={dayData.day}
+          high={dayData.high}
+          low={dayData.low}
+          />
+        ))}
       </div>
     </div>
   );
